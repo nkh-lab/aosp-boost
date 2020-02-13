@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="origin"
+           fetch="https://git@github.com/boostorg/" 
+           revision="refs/tags/boost-1.72.0" />
+
+  <project path="external/boost/libs/algorithm"
+           name="algorithm"
+           remote="origin" />
+
+  <project path="external/boost/libs/align"
+           name="align"
+           remote="origin" />
+
+  <project path="external/boost/libs/any"
+           name="any"
+           remote="origin" />
+
+  <project path="external/boost/libs/array"
+           name="array"
+           remote="origin" />
+
+  <project path="external/boost/libs/asio"
+           name="asio"
+           remote="origin" />
+
+  <project path="external/boost/libs/assert"
+           name="assert"
+           remote="origin" />
+
+  <project path="external/boost/libs/atomic"
+           name="atomic"
+           remote="origin" />
+
+  <project path="external/boost/libs/bind"
+           name="bind"
+           remote="origin" />
+
+  <project path="external/boost/libs/chrono"
+           name="chrono"
+           remote="origin" />
+
+  <project path="external/boost/libs/concept_check"
+           name="concept_check"
+           remote="origin" />
+
+  <project path="external/boost/libs/config"
+           name="config"
+           remote="origin" />
+
+  <project path="external/boost/libs/container"
+           name="container"
+           remote="origin" />
+
+  <project path="external/boost/libs/container_hash"
+           name="container_hash"
+           remote="origin" />
+
+  <project path="external/boost/libs/core"
+           name="core"
+           remote="origin" />
+
+  <project path="external/boost/libs/date_time"
+           name="date_time"
+           remote="origin" />
+
+  <project path="external/boost/libs/detail"
+           name="detail"
+           remote="origin" />
+
+  <project path="external/boost/libs/exception"
+           name="exception"
+           remote="origin" />
+
+  <project path="external/boost/libs/filesystem"
+           name="filesystem"
+           remote="origin" />
+
+  <project path="external/boost/libs/foreach"
+           name="foreach"
+           remote="origin" />
+
+  <project path="external/boost/libs/function"
+           name="function"
+           remote="origin" />
+
+  <project path="external/boost/libs/functional"
+           name="functional"
+           remote="origin" />
+
+  <project path="external/boost/libs/function_types"
+           name="function_types"
+           remote="origin" />
+
+  <project path="external/boost/libs/fusion"
+           name="fusion"
+           remote="origin" />
+
+  <project path="external/boost/libs/integer"
+           name="integer"
+           remote="origin" />
+
+  <project path="external/boost/libs/interprocess"
+           name="interprocess"
+           remote="origin" />
+
+  <project path="external/boost/libs/intrusive"
+           name="intrusive"
+           remote="origin" />
+
+  <project path="external/boost/libs/io"
+           name="io"
+           remote="origin" />
+
+  <project path="external/boost/libs/iterator"
+           name="iterator"
+           remote="origin" />
+
+  <project path="external/boost/libs/lexical_cast"
+           name="lexical_cast"
+           remote="origin" />
+
+  <project path="external/boost/libs/locale"
+           name="locale"
+           remote="origin" />
+
+  <project path="external/boost/libs/log"
+           name="log"
+           remote="origin" />
+
+  <project path="external/boost/libs/math"
+           name="math"
+           remote="origin" />
+
+  <project path="external/boost/libs/move"
+           name="move"
+           remote="origin" />
+
+  <project path="external/boost/libs/mp11"
+           name="mp11"
+           remote="origin" />
+
+  <project path="external/boost/libs/mpl"
+           name="mpl"
+           remote="origin" />
+
+  <project path="external/boost/libs/multi_index"
+           name="multi_index"
+           remote="origin" />
+
+  <project path="external/boost/libs/numeric_conversion"
+           name="numeric_conversion"
+           remote="origin" />
+
+  <project path="external/boost/libs/optional"
+           name="optional"
+           remote="origin" />
+
+  <project path="external/boost/libs/parameter"
+           name="parameter"
+           remote="origin" />
+
+  <project path="external/boost/libs/phoenix"
+           name="phoenix"
+           remote="origin" />
+
+  <project path="external/boost/libs/predef"
+           name="predef"
+           remote="origin" />
+
+  <project path="external/boost/libs/preprocessor"
+           name="preprocessor"
+           remote="origin" />
+
+  <project path="external/boost/libs/property_tree"
+           name="property_tree"
+           remote="origin" />
+
+  <project path="external/boost/libs/proto"
+           name="proto"
+           remote="origin" />
+
+  <project path="external/boost/libs/random"
+           name="random"
+           remote="origin" />
+
+  <project path="external/boost/libs/range"
+           name="range"
+           remote="origin" />
+
+  <project path="external/boost/libs/ratio"
+           name="ratio"
+           remote="origin" />
+
+  <project path="external/boost/libs/regex"
+           name="regex"
+           remote="origin" />
+
+  <project path="external/boost/libs/serialization"
+           name="serialization"
+           remote="origin" />
+
+  <project path="external/boost/libs/smart_ptr"
+           name="smart_ptr"
+           remote="origin" />
+
+  <project path="external/boost/libs/spirit"
+           name="spirit"
+           remote="origin" />
+
+  <project path="external/boost/libs/static_assert"
+           name="static_assert"
+           remote="origin" />
+
+  <project path="external/boost/libs/system"
+           name="system"
+           remote="origin" />
+
+  <project path="external/boost/libs/thread"
+           name="thread"
+           remote="origin" />
+
+  <project path="external/boost/libs/throw_exception"
+           name="throw_exception"
+           remote="origin" />
+
+  <project path="external/boost/libs/tokenizer"
+           name="tokenizer"
+           remote="origin" />
+
+  <project path="external/boost/libs/tuple"
+           name="tuple"
+           remote="origin" />
+
+  <project path="external/boost/libs/type_erasure"
+           name="type_erasure"
+           remote="origin" />
+
+  <project path="external/boost/libs/type_index"
+           name="type_index"
+           remote="origin" />
+
+  <project path="external/boost/libs/typeof"
+           name="typeof"
+           remote="origin" />
+
+  <project path="external/boost/libs/type_traits"
+           name="type_traits"
+           remote="origin" />
+
+  <project path="external/boost/libs/utility"
+           name="utility"
+           remote="origin" />
+
+  <project path="external/boost/libs/variant"
+           name="variant"
+           remote="origin" />
+
+</manifest>
