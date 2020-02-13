@@ -1,0 +1,920 @@
+cc_defaults {
+    name: "boost_defaults",
+    vendor: true,
+}
+
+cc_defaults {
+    name: "boost_headers_defaults",
+    defaults: ["boost_defaults"],
+}
+
+cc_defaults {
+    name: "boost_static_defaults",
+    defaults: ["boost_defaults"],
+
+    rtti: true,
+
+    cflags: [
+        "-Wall",
+//        "-Werror",
+        "-fexceptions",
+//        "-DBOOST_THREAD_DONT_USE_CHRONO",
+//        "-DBOOST_THREAD_POSIX",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_algorithm",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_range",
+    ],
+
+    export_include_dirs: ["algorithm/include/"],
+
+    export_header_lib_headers: [
+        "libboost_range",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_align",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["align/include/"],
+}
+
+cc_library_headers {
+    name: "libboost_any",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["any/include/"],
+}
+
+cc_library_headers {
+    name: "libboost_array",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["array/include"],
+}
+
+cc_library_headers {
+    name: "libboost_asio",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["asio/include/"],
+}
+
+cc_library_headers {
+    name: "libboost_assert",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["assert/include"],
+}
+
+cc_library_static {
+    name: "libboost_atomic",
+    defaults: ["boost_static_defaults"],
+
+    srcs : [
+        "atomic/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["atomic/include"],
+}
+
+cc_library_headers {
+    name: "libboost_bind",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["bind/include/"],
+}
+
+cc_library_static {
+    name: "libboost_chrono",
+    defaults: ["boost_static_defaults"],
+
+    header_libs: [
+        "libboost_ratio",
+        "libboost_predef",
+    ],
+
+    srcs : [
+        "chrono/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["chrono/include"],
+
+    export_header_lib_headers: [
+        "libboost_ratio",
+        "libboost_predef",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_concept_check",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["concept_check/include"],
+}
+
+cc_library_headers {
+    name: "libboost_config",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["config/include"],
+}
+
+cc_library_static {
+    name: "libboost_container",
+    defaults: ["boost_static_defaults"],
+
+    srcs : [
+        "container/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["container/include"],
+}
+
+cc_library_headers {
+    name: "libboost_container_hash",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_integer",
+        "libboost_detail",
+    ],
+
+    export_include_dirs: ["container_hash/include"],
+
+    export_header_lib_headers: [
+        "libboost_integer",
+        "libboost_detail",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_core",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["core/include"],
+}
+
+cc_library_static {
+    name: "libboost_date_time",
+    defaults: ["boost_static_defaults"],
+
+    header_libs: [
+        "libboost_numeric_conversion",
+        "libboost_algorithm",
+        "libboost_tokenizer",
+        "libboost_throw_exception",
+        "libboost_smart_ptr",
+        "libboost_utility",
+    ],
+
+    srcs : [
+        "date_time/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["date_time/include"],
+
+    export_header_lib_headers: [
+        "libboost_numeric_conversion",
+        "libboost_algorithm",
+        "libboost_tokenizer",
+        "libboost_throw_exception",
+        "libboost_smart_ptr",
+        "libboost_utility",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_detail",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["detail/include"],
+}
+
+cc_library_static {
+    name: "libboost_exception",
+    defaults: ["boost_static_defaults"],
+
+    srcs : [
+        "exception/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["exception/include"],
+}
+
+cc_library_static {
+    name: "libboost_filesystem",
+    defaults: ["boost_static_defaults"],
+
+    header_libs: [
+        "libboost_io",
+    ],
+
+    srcs : [
+        "filesystem/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["filesystem/include"],
+
+    export_header_lib_headers: [
+        "libboost_io",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_foreach",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["foreach/include/"],
+}
+
+cc_library_headers {
+    name: "libboost_function",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_type_index",
+    ],
+
+    export_include_dirs: ["function/include/"],
+
+    export_header_lib_headers: [
+        "libboost_type_index",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_functional",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_container_hash",
+    ],
+
+    export_include_dirs: ["functional/include/"],
+
+    export_header_lib_headers: [
+        "libboost_container_hash",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_function_types",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["function_types/include/"],
+}
+
+cc_library_headers {
+    name: "libboost_fusion",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_typeof",
+    ],
+
+    export_include_dirs: ["fusion/include"],
+
+    export_header_lib_headers: [
+        "libboost_typeof",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_integer",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["integer/include"],
+}
+
+cc_library_headers {
+    name: "libboost_interprocess",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["interprocess/include/"],
+}
+
+cc_library_headers {
+    name: "libboost_intrusive",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["intrusive/include"],
+}
+
+cc_library_headers {
+    name: "libboost_io",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["io/include"],
+}
+
+cc_library_headers {
+    name: "libboost_iterator",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["iterator/include"],
+}
+
+cc_library_headers {
+    name: "libboost_lexical_cast",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_array",
+    ],
+
+    static_libs: [
+        "libboost_container",
+        "libboost_math",
+    ],
+
+    export_include_dirs: ["lexical_cast/include/"],
+
+    export_header_lib_headers: [
+        "libboost_array",
+    ],
+
+    export_static_lib_headers: [
+        "libboost_container",
+         "libboost_math",
+    ],
+}
+
+cc_library_static {
+    name: "libboost_locale",
+    defaults: ["boost_static_defaults"],
+
+    srcs : [
+        "locale/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["locale/include"],
+}
+
+cc_library_static {
+    name: "libboost_log",
+    defaults: ["boost_static_defaults"],
+
+    //FIXME: build workaround
+    cflags: [
+        "-Wno-implicit-fallthrough",
+        "-Wno-non-virtual-dtor",
+        "-Wno-unused-parameter",
+    ],
+
+    header_libs: [
+        "libboost_predef",
+        "libboost_config",
+        "libboost_parameter",
+        "libboost_assert",
+        "libboost_move",
+        "libboost_smart_ptr",
+        "libboost_type_index",
+        "libboost_optional",
+        "libboost_array",
+        "libboost_intrusive",
+        "libboost_iterator",
+        "libboost_spirit",
+        "libboost_fusion",
+        "libboost_range",
+        "libboost_lexical_cast",
+        "libboost_interprocess",
+        "libboost_asio",
+        "libboost_align",
+        "libboost_property_tree",
+    ],
+
+    static_libs: [
+        "libboost_system",
+        "libboost_filesystem",
+        "libboost_thread",
+        "libboost_locale",
+        "libboost_atomic",
+        "libboost_random",
+        "libboost_exception",
+    ],
+
+    srcs : [
+        "log/src/**/*.cpp",
+    ],
+
+    exclude_srcs : [
+        "log/src/dump_ssse3.cpp",
+        "log/src/dump_avx2.cpp",
+        "log/src/windows/*.cpp"
+    ],
+
+    local_include_dirs : [
+        "log/src",
+        "log/src/posix",
+        "log/src/setup",
+        "log/src/windows",
+    ],
+
+    export_include_dirs: ["log/include"],
+
+    export_header_lib_headers: [
+        "libboost_predef",
+        "libboost_config",
+        "libboost_parameter",
+        "libboost_assert",
+        "libboost_move",
+        "libboost_smart_ptr",
+        "libboost_type_index",
+        "libboost_optional",
+        "libboost_array",
+        "libboost_intrusive",
+        "libboost_iterator",
+        "libboost_spirit",
+        "libboost_fusion",
+        "libboost_range",
+        "libboost_lexical_cast",
+        "libboost_interprocess",
+        "libboost_asio",
+        "libboost_align",
+        "libboost_property_tree",
+    ],
+
+    export_static_lib_headers: [
+        "libboost_system",
+        "libboost_filesystem",
+        "libboost_thread",
+        "libboost_locale",
+        "libboost_atomic",
+        "libboost_random",
+        "libboost_exception",
+    ],
+}
+
+cc_library_static {
+    name: "libboost_math",
+    defaults: ["boost_static_defaults"],
+
+    srcs : [
+        "math/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["math/include"],
+}
+
+cc_library_headers {
+    name: "libboost_move",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_static_assert",
+    ],
+
+    export_include_dirs: ["move/include"],
+
+    export_header_lib_headers: [
+        "libboost_static_assert",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_mp11",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["mp11/include"],
+}
+
+cc_library_headers {
+    name: "libboost_mpl",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_preprocessor",
+    ],
+
+    export_include_dirs: ["mpl/include"],
+
+    export_header_lib_headers: [
+        "libboost_preprocessor",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_multi_index",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_tuple",
+    ],
+
+    static_libs: [
+        "libboost_serialization",
+    ],
+
+    export_include_dirs: ["multi_index/include/"],
+
+    export_header_lib_headers: [
+        "libboost_tuple",
+    ],
+
+    export_static_lib_headers: [
+        "libboost_serialization",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_numeric_conversion",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["numeric_conversion/include"],
+}
+
+cc_library_headers {
+    name: "libboost_optional",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["optional/include"],
+}
+
+cc_library_headers {
+    name: "libboost_parameter",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_mpl",
+        "libboost_mp11",
+        "libboost_type_traits",
+        "libboost_utility",
+    ],
+
+    export_include_dirs: ["parameter/include"],
+
+    export_header_lib_headers: [
+        "libboost_mpl",
+        "libboost_mp11",
+        "libboost_type_traits",
+        "libboost_utility",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_phoenix",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_proto",
+        "libboost_bind",
+    ],
+
+    static_libs: [
+        "libboost_type_erasure",
+    ],
+
+    export_include_dirs: ["phoenix/include"],
+
+    export_header_lib_headers: [
+        "libboost_proto",
+        "libboost_bind",
+    ],
+
+    export_static_lib_headers: [
+        "libboost_type_erasure",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_predef",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["predef/include"],
+}
+
+cc_library_headers {
+    name: "libboost_preprocessor",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["preprocessor/include"],
+}
+
+cc_library_headers {
+    name: "libboost_property_tree",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_any",
+        "libboost_multi_index",
+    ],
+
+    export_include_dirs: ["property_tree/include/"],
+
+    export_header_lib_headers: [
+        "libboost_any",
+        "libboost_multi_index",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_proto",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["proto/include"],
+}
+
+cc_library_static {
+    name: "libboost_random",
+    defaults: ["boost_static_defaults"],
+
+    srcs : [
+        "random/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["random/include"],
+}
+
+cc_library_headers {
+    name: "libboost_range",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_concept_check",
+    ],
+
+    export_include_dirs: ["range/include"],
+
+    export_header_lib_headers: [
+        "libboost_concept_check",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_ratio",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_integer",
+    ],
+
+    export_include_dirs: ["ratio/include"],
+
+    export_header_lib_headers: [
+        "libboost_integer",
+    ],
+}
+
+cc_library_static {
+    name: "libboost_regex",
+    defaults: ["boost_static_defaults"],
+
+    srcs : [
+        "regex/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["regex/include"],
+}
+
+cc_library_static {
+    name: "libboost_serialization",
+    defaults: ["boost_static_defaults"],
+
+    srcs : [
+        "searilization/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["serialization/include"],
+}
+
+cc_library_headers {
+    name: "libboost_smart_ptr",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_throw_exception",
+    ],
+
+    export_include_dirs: ["smart_ptr/include"],
+
+    export_header_lib_headers: [
+        "libboost_throw_exception",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_spirit",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_phoenix",
+        "libboost_variant",
+        "libboost_foreach",
+        "libboost_function",
+        "libboost_function_types",
+    ],
+
+    static_libs: [
+        "libboost_regex",
+        "libboost_math",
+    ],
+
+    export_include_dirs: ["spirit/include"],
+
+    export_header_lib_headers: [
+        "libboost_phoenix",
+        "libboost_variant",
+        "libboost_foreach",
+        "libboost_function",
+        "libboost_function_types",
+    ],
+
+    export_static_lib_headers: [
+        "libboost_regex",
+        "libboost_math",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_static_assert",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["static_assert/include"],
+}
+
+cc_library_static {
+    name: "libboost_system",
+    defaults: ["boost_static_defaults"],
+
+    srcs : [
+        "system/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["system/include"],
+}
+
+cc_library_static {
+    name: "libboost_thread",
+    defaults: ["boost_static_defaults"],
+
+    //FIXME: build workaround
+    cflags: [
+        "-Wno-non-virtual-dtor",
+    ],
+
+    header_libs: [
+        "libboost_config",
+        "libboost_core",
+        "libboost_type_traits",
+        "libboost_move",
+        "libboost_mpl",
+        "libboost_bind",
+        "libboost_predef",
+        "libboost_io",
+        "libboost_functional",
+        "libboost_tuple",
+        "libboost_iterator",
+        "libboost_optional",
+        "libboost_function",
+        "libboost_lexical_cast",
+    ],
+
+    static_libs: [
+        "libboost_date_time",
+        "libboost_chrono",
+        "libboost_system",
+        "libboost_atomic",
+        "libboost_exception",
+    ],
+
+    srcs : [
+        "thread/src/**/*.cpp",
+    ],
+
+    exclude_srcs : [
+        "thread/src/win32/*.cpp",
+    ],
+
+    local_include_dirs : [
+        "thread/src",
+        "thread/src/pthread",
+    ],
+
+    export_include_dirs: ["thread/include"],
+
+    export_header_lib_headers: [
+        "libboost_config",
+        "libboost_core",
+        "libboost_type_traits",
+        "libboost_move",
+        "libboost_mpl",
+        "libboost_bind",
+        "libboost_predef",
+        "libboost_io",
+        "libboost_functional",
+        "libboost_tuple",
+        "libboost_tuple",
+        "libboost_iterator",
+        "libboost_optional",
+        "libboost_function",
+        "libboost_lexical_cast",
+    ],
+
+    export_static_lib_headers: [
+        "libboost_date_time",
+        "libboost_chrono",
+        "libboost_system",
+        "libboost_atomic",
+        "libboost_exception",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_throw_exception",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["throw_exception/include"],
+}
+
+cc_library_headers {
+    name: "libboost_tokenizer",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["tokenizer/include/"],
+}
+
+cc_library_headers {
+    name: "libboost_tuple",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["tuple/include/"],
+}
+
+cc_library_static {
+    name: "libboost_type_erasure",
+    defaults: ["boost_static_defaults"],
+
+    srcs : [
+        "type_erasure/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["type_erasure/include"],
+}
+
+cc_library_headers {
+    name: "libboost_type_index",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_container_hash",
+    ],
+
+    export_include_dirs: ["type_index/include"],
+
+    export_header_lib_headers: [
+        "libboost_container_hash",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_typeof",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["typeof/include/"],
+}
+
+cc_library_headers {
+    name: "libboost_type_traits",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_static_assert",
+        "libboost_assert"
+    ],
+
+    export_include_dirs: ["type_traits/include"],
+
+    export_header_lib_headers: [
+        "libboost_static_assert",
+        "libboost_assert",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_utility",
+    defaults: ["boost_headers_defaults"],
+
+    header_libs: [
+        "libboost_core",
+    ],
+
+    export_include_dirs: ["utility/include"],
+
+    export_header_lib_headers: [
+        "libboost_core",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_variant",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: ["variant/include/"],
+}

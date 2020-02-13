@@ -1,0 +1,24 @@
+cc_binary {
+    name: "hello_boost",
+    vendor: true,
+    rtti: true,
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-fexceptions",
+    ],
+
+    header_libs: [
+    ],
+
+    static_libs: [
+          "libboost_log",
+          "libboost_thread",
+
+    ],
+
+    srcs: [
+        "main.cpp",
+    ],
+}
