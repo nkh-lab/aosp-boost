@@ -249,6 +249,10 @@
            name="type_traits"
            remote="origin" />
 
+  <project path="external/boost/libs/unordered"
+           name="unordered"
+           remote="origin" />
+
   <project path="external/boost/libs/utility"
            name="utility"
            remote="origin" />
