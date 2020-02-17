@@ -1,5 +1,10 @@
-cc_binary {
-    name: "hello_boost",
+hello_boost_req_libs= [
+      "libboost_log",
+      "libboost_thread",
+]
+
+cc_defaults {
+    name: "hello_boost_defaults",
     vendor: true,
     rtti: true,
 
@@ -10,15 +15,24 @@ cc_binary {
     ],
 
     header_libs: [
-    ],
-
-    static_libs: [
-          "libboost_log",
-          "libboost_thread",
-
+        "libboost_headers",
     ],
 
     srcs: [
         "main.cpp",
     ],
+}
+
+cc_binary {
+    name: "hello_boost_shared",
+    defaults: ["hello_boost_defaults"],
+
+    shared_libs: hello_boost_req_libs,
+}
+
+cc_binary {
+    name: "hello_boost_static",
+    defaults: ["hello_boost_defaults"],
+
+    static_libs: hello_boost_req_libs,
 }

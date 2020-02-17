@@ -1,0 +1,209 @@
+cc_defaults {
+    name: "boost_defaults",
+    vendor: true,
+}
+
+cc_defaults {
+    name: "boost_headers_defaults",
+    defaults: ["boost_defaults"],
+}
+
+cc_defaults {
+    name: "boost_library_defaults",
+    defaults: ["boost_defaults"],
+
+    rtti: true,
+
+    cflags: [
+        "-Wall",
+//        "-Werror",
+        "-fexceptions",
+//        "-DBOOST_THREAD_DONT_USE_CHRONO",
+//        "-DBOOST_THREAD_POSIX",
+    ],
+}
+
+cc_library_headers {
+    name: "libboost_headers",
+    defaults: ["boost_headers_defaults"],
+
+    export_include_dirs: [
+        "algorithm/include/",
+        "align/include/",
+        "any/include/",
+        "array/include",
+        "asio/include/",
+        "assert/include",
+        "atomic/include",
+        "bind/include/",
+        "chrono/include",
+        "concept_check/include",
+        "config/include",
+        "container/include",
+        "container_hash/include",
+        "core/include",
+        "date_time/include",
+        "detail/include",
+        "exception/include",
+        "filesystem/include",
+        "foreach/include/",
+        "function/include/",
+        "functional/include/",
+        "function_types/include/",
+        "fusion/include",
+        "integer/include",
+        "interprocess/include/",
+        "intrusive/include",
+        "io/include",
+        "iterator/include",
+        "lexical_cast/include/",
+        "locale/include",
+        "log/include",
+        "math/include",
+        "move/include",
+        "mp11/include",
+        "mpl/include",
+        "multi_index/include/",
+        "numeric_conversion/include",
+        "optional/include",
+        "parameter/include",
+        "phoenix/include",
+        "predef/include",
+        "preprocessor/include",
+        "property_tree/include/",
+        "proto/include",
+        "random/include",
+        "range/include",
+        "ratio/include",
+        "regex/include",
+        "serialization/include",
+        "smart_ptr/include",
+        "spirit/include",
+        "static_assert/include",
+        "system/include",
+        "thread/include",
+        "throw_exception/include",
+        "tokenizer/include/",
+        "tuple/include/",
+        "type_erasure/include",
+        "type_index/include",
+        "typeof/include/",
+        "type_traits/include",
+        "utility/include",
+        "variant/include/",
+    ]
+}
+
+cc_library {
+    name: "libboost_filesystem",
+    defaults: ["boost_library_defaults"],
+
+    //FIXME: build workaround
+    cflags: [
+        "-Wno-non-virtual-dtor",
+        "-Wno-unused-parameter",
+    ],
+
+    header_libs: [
+        "libboost_headers",
+    ],
+
+    srcs : [
+        "filesystem/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["filesystem/include"],
+}
+
+cc_library {
+    name: "libboost_log",
+    defaults: ["boost_library_defaults"],
+
+    //FIXME: build workaround
+    cflags: [
+        "-Wno-implicit-fallthrough",
+        "-Wno-non-virtual-dtor",
+        "-Wno-unused-parameter",
+    ],
+
+    header_libs: [
+        "libboost_headers",
+    ],
+
+    shared: {
+        shared_libs: [
+            "libboost_thread",
+            "libboost_filesystem",
+            "libboost_regex",
+        ],
+    },
+
+    srcs : [
+        "log/src/**/*.cpp",
+    ],
+
+    exclude_srcs : [
+        "log/src/dump_ssse3.cpp",
+        "log/src/dump_avx2.cpp",
+        "log/src/windows/*.cpp"
+    ],
+
+    local_include_dirs : [
+        "log/src",
+        "log/src/posix",
+        "log/src/setup",
+        "log/src/windows",
+    ],
+
+    export_include_dirs: ["log/include"],
+}
+
+cc_library {
+    name: "libboost_regex",
+    defaults: ["boost_library_defaults"],
+
+    //FIXME: build workaround
+    cflags: [
+        "-Wno-implicit-fallthrough",
+    ],
+
+    header_libs: [
+        "libboost_headers",
+    ],
+
+    srcs : [
+        "regex/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["regex/include"],
+}
+
+cc_library {
+    name: "libboost_thread",
+    defaults: ["boost_library_defaults"],
+
+    //FIXME: build workaround
+    cflags: [
+        "-Wno-non-virtual-dtor",
+    ],
+
+    header_libs: [
+        "libboost_headers",
+    ],
+
+    srcs : [
+        "thread/src/**/*.cpp",
+    ],
+
+    exclude_srcs : [
+        "thread/src/win32/*.cpp",
+        "thread/src/pthread/once_atomic.cpp",
+    ],
+
+    local_include_dirs : [
+        "thread/src",
+        "thread/src/pthread",
+    ],
+
+    export_include_dirs: ["thread/include"],
+}
