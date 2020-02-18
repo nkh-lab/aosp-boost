@@ -20,6 +20,7 @@ cc_defaults {
         "-fexceptions",
 //        "-DBOOST_THREAD_DONT_USE_CHRONO",
 //        "-DBOOST_THREAD_POSIX",
+        "-DBOOST_ASIO_HAS_STD_STRING_VIEW",
     ],
 }
 
@@ -28,69 +29,132 @@ cc_library_headers {
     defaults: ["boost_headers_defaults"],
 
     export_include_dirs: [
+        "accumulators/include/",
         "algorithm/include/",
         "align/include/",
         "any/include/",
         "array/include",
         "asio/include/",
         "assert/include",
+        "assign/include",
         "atomic/include",
+        "beast/include",
+        "bimap/include",
         "bind/include/",
+        "callable_traits/include/",
         "chrono/include",
+        "circular_buffer/include",
+        "compatibility/include",
+        "compute/include",
         "concept_check/include",
         "config/include",
         "container/include",
-        "container_hash/include",
+        "context/include",
+        "conversion/include",
+        "convert/include",
         "core/include",
+        "coroutine/include",
+        "coroutine2/include",
+        "crc/include",
         "date_time/include",
         "detail/include",
+        "disjoint_sets/include",
+        "dll/include",
+        "dynamic_bitset/include",
+        "endian/include",
         "exception/include",
+        "fiber/include",
         "filesystem/include",
+        "flyweight/include",
         "foreach/include/",
+        "format/include/",
         "function/include/",
         "functional/include/",
         "function_types/include/",
         "fusion/include",
+        "geometry/include",
+        "gil/include",
+        "graph/include",
+        "graph_parallel/include",
+        "hana/include",
+        "heap/include",
+        "icl/include",
         "integer/include",
         "interprocess/include/",
         "intrusive/include",
         "io/include",
+        "iostreams/include",
         "iterator/include",
+        "lambda/include",
         "lexical_cast/include/",
         "locale/include",
+        "local_function/include",
+        "lockfree/include",
         "log/include",
+        "logic/include",
         "math/include",
+        "metaparse/include",
         "move/include",
         "mp11/include",
+        "mpi/include",
         "mpl/include",
+        "msm/include",
+        "multi_array/include",
         "multi_index/include/",
-        "numeric_conversion/include",
+        "multiprecision/include/",
+        "numeric/include",
         "optional/include",
         "parameter/include",
         "phoenix/include",
+        "poly_collection/include",
+        "polygon/include",
+        "pool/include",
         "predef/include",
         "preprocessor/include",
+        "process/include",
+        "program_options/include",
+        "property_map/include",
         "property_tree/include/",
         "proto/include",
+        "ptr_container/include",
+        "python/include",
+        "qvm/include",
         "random/include",
         "range/include",
         "ratio/include",
+        "rational/include",
         "regex/include",
+        "scope_exit/include",
         "serialization/include",
+        "signals/include",
+        "signals2/include",
         "smart_ptr/include",
+        "sort/include",
         "spirit/include",
+        "stacktrace/include",
+        "statechart/include",
         "static_assert/include",
         "system/include",
+        "test/include",
         "thread/include",
         "throw_exception/include",
+        "timer/include",
         "tokenizer/include/",
+        "tti/include/",
         "tuple/include/",
         "type_erasure/include",
         "type_index/include",
         "typeof/include/",
         "type_traits/include",
+        "units/include",
+        "unordered/include",
         "utility/include",
+        "uuid/include",
         "variant/include/",
+        "vmd/include/",
+        "wave/include/",
+        "winapi/include/",
+        "xpressive/include/",
     ]
 }
 
@@ -100,6 +164,7 @@ cc_library {
 
     //FIXME: build workaround
     cflags: [
+        "-Wno-deprecated-declarations",
         "-Wno-non-virtual-dtor",
         "-Wno-unused-parameter",
     ],
@@ -108,11 +173,21 @@ cc_library {
         "libboost_headers",
     ],
 
+    shared: {
+        shared_libs: [
+            "libboost_system",
+        ],
+    },
+
     srcs : [
         "filesystem/src/**/*.cpp",
     ],
 
     export_include_dirs: ["filesystem/include"],
+
+    export_header_lib_headers: [
+        "libboost_headers",
+    ],
 }
 
 cc_library {
@@ -135,6 +210,7 @@ cc_library {
             "libboost_thread",
             "libboost_filesystem",
             "libboost_regex",
+            "libboost_system",
         ],
     },
 
@@ -156,6 +232,10 @@ cc_library {
     ],
 
     export_include_dirs: ["log/include"],
+
+    export_header_lib_headers: [
+        "libboost_headers",
+    ],
 }
 
 cc_library {
@@ -176,6 +256,29 @@ cc_library {
     ],
 
     export_include_dirs: ["regex/include"],
+
+    export_header_lib_headers: [
+        "libboost_headers",
+    ],
+}
+
+cc_library {
+    name: "libboost_system",
+    defaults: ["boost_library_defaults"],
+
+    header_libs: [
+        "libboost_headers",
+    ],
+
+    srcs : [
+        "system/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["system/include"],
+
+    export_header_lib_headers: [
+        "libboost_headers",
+    ],
 }
 
 cc_library {
@@ -190,6 +293,12 @@ cc_library {
     header_libs: [
         "libboost_headers",
     ],
+
+    shared: {
+        shared_libs: [
+            "libboost_system",
+        ],
+    },
 
     srcs : [
         "thread/src/**/*.cpp",
@@ -206,4 +315,8 @@ cc_library {
     ],
 
     export_include_dirs: ["thread/include"],
+
+    export_header_lib_headers: [
+        "libboost_headers",
+    ],
 }

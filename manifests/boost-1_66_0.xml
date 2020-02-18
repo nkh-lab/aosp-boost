@@ -3,7 +3,11 @@
 
   <remote  name="origin"
            fetch="https://git@github.com/boostorg/" 
-           revision="refs/tags/boost-1.72.0" />
+           revision="refs/tags/boost-1.66.0" />
+
+  <project path="external/boost/libs/accumulators"
+           name="accumulators"
+           remote="origin" />
 
   <project path="external/boost/libs/algorithm"
            name="algorithm"
@@ -23,22 +27,50 @@
 
   <project path="external/boost/libs/asio"
            name="asio"
-           remote="origin" />
+           remote="origin" />        
 
   <project path="external/boost/libs/assert"
            name="assert"
+           remote="origin" />
+
+  <project path="external/boost/libs/assign"
+           name="assign"
            remote="origin" />
 
   <project path="external/boost/libs/atomic"
            name="atomic"
            remote="origin" />
 
+  <project path="external/boost/libs/beast"
+           name="beast"
+           remote="origin" />
+
+  <project path="external/boost/libs/bimap"
+           name="bimap"
+           remote="origin" />
+
   <project path="external/boost/libs/bind"
            name="bind"
            remote="origin" />
 
+  <project path="external/boost/libs/callable_traits"
+           name="callable_traits"
+           remote="origin" />
+
   <project path="external/boost/libs/chrono"
            name="chrono"
+           remote="origin" />
+
+  <project path="external/boost/libs/circular_buffer"
+           name="circular_buffer"
+           remote="origin" />
+
+  <project path="external/boost/libs/compatibility"
+           name="compatibility"
+           remote="origin" />
+
+  <project path="external/boost/libs/compute"
+           name="compute"
            remote="origin" />
 
   <project path="external/boost/libs/concept_check"
@@ -57,8 +89,32 @@
            name="container_hash"
            remote="origin" />
 
+  <project path="external/boost/libs/context"
+           name="context"
+           remote="origin" />
+
+  <project path="external/boost/libs/conversion"
+           name="conversion"
+           remote="origin" />
+
+  <project path="external/boost/libs/convert"
+           name="convert"
+           remote="origin" />
+
   <project path="external/boost/libs/core"
            name="core"
+           remote="origin" />
+
+  <project path="external/boost/libs/coroutine"
+           name="coroutine"
+           remote="origin" />
+
+  <project path="external/boost/libs/coroutine2"
+           name="coroutine2"
+           remote="origin" />
+
+  <project path="external/boost/libs/crc"
+           name="crc"
            remote="origin" />
 
   <project path="external/boost/libs/date_time"
@@ -69,16 +125,44 @@
            name="detail"
            remote="origin" />
 
+  <project path="external/boost/libs/disjoint_sets"
+           name="disjoint_sets"
+           remote="origin" />
+
+  <project path="external/boost/libs/dll"
+           name="dll"
+           remote="origin" />
+
+  <project path="external/boost/libs/dynamic_bitset"
+           name="dynamic_bitset"
+           remote="origin" />
+
+  <project path="external/boost/libs/endian"
+           name="endian"
+           remote="origin" />
+
   <project path="external/boost/libs/exception"
            name="exception"
+           remote="origin" />
+
+  <project path="external/boost/libs/fiber"
+           name="fiber"
            remote="origin" />
 
   <project path="external/boost/libs/filesystem"
            name="filesystem"
            remote="origin" />
 
+  <project path="external/boost/libs/flyweight"
+           name="flyweight"
+           remote="origin" />
+
   <project path="external/boost/libs/foreach"
            name="foreach"
+           remote="origin" />
+
+  <project path="external/boost/libs/format"
+           name="format"
            remote="origin" />
 
   <project path="external/boost/libs/function"
@@ -97,6 +181,34 @@
            name="fusion"
            remote="origin" />
 
+  <project path="external/boost/libs/geometry"
+           name="geometry"
+           remote="origin" />
+
+  <project path="external/boost/libs/gil"
+           name="gil"
+           remote="origin" />
+
+  <project path="external/boost/libs/graph"
+           name="graph"
+           remote="origin" />
+
+  <project path="external/boost/libs/graph_parallel"
+           name="graph_parallel"
+           remote="origin" />
+
+  <project path="external/boost/libs/hana"
+           name="hana"
+           remote="origin" />
+
+  <project path="external/boost/libs/heap"
+           name="heap"
+           remote="origin" />
+
+  <project path="external/boost/libs/icl"
+           name="icl"
+           remote="origin" />
+
   <project path="external/boost/libs/integer"
            name="integer"
            remote="origin" />
@@ -113,8 +225,16 @@
            name="io"
            remote="origin" />
 
+  <project path="external/boost/libs/iostreams"
+           name="iostreams"
+           remote="origin" />
+
   <project path="external/boost/libs/iterator"
            name="iterator"
+           remote="origin" />
+
+  <project path="external/boost/libs/lambda"
+           name="lambda"
            remote="origin" />
 
   <project path="external/boost/libs/lexical_cast"
@@ -125,12 +245,28 @@
            name="locale"
            remote="origin" />
 
+  <project path="external/boost/libs/local_function"
+           name="local_function"
+           remote="origin" />
+
+  <project path="external/boost/libs/lockfree"
+           name="lockfree"
+           remote="origin" />
+
   <project path="external/boost/libs/log"
            name="log"
            remote="origin" />
 
+  <project path="external/boost/libs/logic"
+           name="logic"
+           remote="origin" />
+
   <project path="external/boost/libs/math"
            name="math"
+           remote="origin" />
+
+  <project path="external/boost/libs/metaparse"
+           name="metaparse"
            remote="origin" />
 
   <project path="external/boost/libs/move"
@@ -141,15 +277,31 @@
            name="mp11"
            remote="origin" />
 
+  <project path="external/boost/libs/mpi"
+           name="mpi"
+           remote="origin" />
+
   <project path="external/boost/libs/mpl"
            name="mpl"
+           remote="origin" />
+
+  <project path="external/boost/libs/msm"
+           name="msm"
+           remote="origin" />
+
+  <project path="external/boost/libs/multi_array"
+           name="multi_array"
            remote="origin" />
 
   <project path="external/boost/libs/multi_index"
            name="multi_index"
            remote="origin" />
 
-  <project path="external/boost/libs/numeric_conversion"
+  <project path="external/boost/libs/multiprecision"
+           name="multiprecision"
+           remote="origin" />
+
+  <project path="external/boost/libs/numeric"
            name="numeric_conversion"
            remote="origin" />
 
@@ -165,6 +317,18 @@
            name="phoenix"
            remote="origin" />
 
+  <project path="external/boost/libs/poly_collection"
+           name="poly_collection"
+           remote="origin" />
+
+  <project path="external/boost/libs/polygon"
+           name="polygon"
+           remote="origin" />
+
+  <project path="external/boost/libs/pool"
+           name="pool"
+           remote="origin" />
+
   <project path="external/boost/libs/predef"
            name="predef"
            remote="origin" />
@@ -173,12 +337,36 @@
            name="preprocessor"
            remote="origin" />
 
+  <project path="external/boost/libs/process"
+           name="process"
+           remote="origin" />
+
+  <project path="external/boost/libs/program_options"
+           name="program_options"
+           remote="origin" />
+
+  <project path="external/boost/libs/property_map"
+           name="property_map"
+           remote="origin" />
+
   <project path="external/boost/libs/property_tree"
            name="property_tree"
            remote="origin" />
 
   <project path="external/boost/libs/proto"
            name="proto"
+           remote="origin" />
+
+  <project path="external/boost/libs/ptr_container"
+           name="ptr_container"
+           remote="origin" />
+
+  <project path="external/boost/libs/python"
+           name="python"
+           remote="origin" />
+
+  <project path="external/boost/libs/qvm"
+           name="qvm"
            remote="origin" />
 
   <project path="external/boost/libs/random"
@@ -193,20 +381,48 @@
            name="ratio"
            remote="origin" />
 
+  <project path="external/boost/libs/rational"
+           name="rational"
+           remote="origin" />
+
   <project path="external/boost/libs/regex"
            name="regex"
+           remote="origin" />
+
+  <project path="external/boost/libs/scope_exit"
+           name="scope_exit"
            remote="origin" />
 
   <project path="external/boost/libs/serialization"
            name="serialization"
            remote="origin" />
 
+  <project path="external/boost/libs/signals"
+           name="signals"
+           remote="origin" />
+
+  <project path="external/boost/libs/signals2"
+           name="signals2"
+           remote="origin" />
+
   <project path="external/boost/libs/smart_ptr"
            name="smart_ptr"
            remote="origin" />
 
+  <project path="external/boost/libs/sort"
+           name="sort"
+           remote="origin" />
+
   <project path="external/boost/libs/spirit"
            name="spirit"
+           remote="origin" />
+
+  <project path="external/boost/libs/stacktrace"
+           name="stacktrace"
+           remote="origin" />
+
+  <project path="external/boost/libs/statechart"
+           name="statechart"
            remote="origin" />
 
   <project path="external/boost/libs/static_assert"
@@ -215,6 +431,10 @@
 
   <project path="external/boost/libs/system"
            name="system"
+           remote="origin" />
+           
+  <project path="external/boost/libs/test"
+           name="test"
            remote="origin" />
 
   <project path="external/boost/libs/thread"
@@ -225,8 +445,16 @@
            name="throw_exception"
            remote="origin" />
 
+  <project path="external/boost/libs/timer"
+           name="timer"
+           remote="origin" />
+
   <project path="external/boost/libs/tokenizer"
            name="tokenizer"
+           remote="origin" />
+
+  <project path="external/boost/libs/tti"
+           name="tti"
            remote="origin" />
 
   <project path="external/boost/libs/tuple"
@@ -249,6 +477,10 @@
            name="type_traits"
            remote="origin" />
 
+  <project path="external/boost/libs/units"
+           name="units"
+           remote="origin" />
+
   <project path="external/boost/libs/unordered"
            name="unordered"
            remote="origin" />
@@ -257,8 +489,28 @@
            name="utility"
            remote="origin" />
 
+  <project path="external/boost/libs/uuid"
+           name="uuid"
+           remote="origin" />
+
   <project path="external/boost/libs/variant"
            name="variant"
+           remote="origin" />
+
+  <project path="external/boost/libs/vmd"
+           name="vmd"
+           remote="origin" />
+
+  <project path="external/boost/libs/wave"
+           name="wave"
+           remote="origin" />
+
+  <project path="external/boost/libs/winapi"
+           name="winapi"
+           remote="origin" />
+
+  <project path="external/boost/libs/xpressive"
+           name="xpressive"
            remote="origin" />
 
 </manifest>
