@@ -1,6 +1,7 @@
 hello_boost_req_libs= [
       "libboost_log",
       "libboost_thread",
+      "libboost_system",
 ]
 
 cc_defaults {
@@ -12,6 +13,7 @@ cc_defaults {
         "-Wall",
         "-Werror",
         "-fexceptions",
+        "-Wno-unused-parameter",
     ],
 
     header_libs: [
