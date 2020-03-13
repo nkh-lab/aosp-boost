@@ -239,6 +239,25 @@ cc_library {
 }
 
 cc_library {
+    name: "libboost_program_options",
+    defaults: ["boost_library_defaults"],
+
+    header_libs: [
+        "libboost_headers",
+    ],
+
+    srcs : [
+        "program_options/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["program_options/include"],
+
+    export_header_lib_headers: [
+        "libboost_headers",
+    ],
+}
+
+cc_library {
     name: "libboost_regex",
     defaults: ["boost_library_defaults"],
 
