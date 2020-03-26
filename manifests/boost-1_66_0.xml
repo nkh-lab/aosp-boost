@@ -1,516 +1,516 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="origin"
+  <remote  name="boostorg"
            fetch="https://git@github.com/boostorg/" 
            revision="refs/tags/boost-1.66.0" />
 
-  <project path="external/boost/libs/accumulators"
+  <project path="external/boost/accumulators"
            name="accumulators"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/algorithm"
+  <project path="external/boost/algorithm"
            name="algorithm"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/align"
+  <project path="external/boost/align"
            name="align"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/any"
+  <project path="external/boost/any"
            name="any"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/array"
+  <project path="external/boost/array"
            name="array"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/asio"
+  <project path="external/boost/asio"
            name="asio"
-           remote="origin" />        
+           remote="boostorg" />
 
-  <project path="external/boost/libs/assert"
+  <project path="external/boost/assert"
            name="assert"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/assign"
+  <project path="external/boost/assign"
            name="assign"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/atomic"
+  <project path="external/boost/atomic"
            name="atomic"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/beast"
+  <project path="external/boost/beast"
            name="beast"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/bimap"
+  <project path="external/boost/bimap"
            name="bimap"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/bind"
+  <project path="external/boost/bind"
            name="bind"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/callable_traits"
+  <project path="external/boost/callable_traits"
            name="callable_traits"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/chrono"
+  <project path="external/boost/chrono"
            name="chrono"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/circular_buffer"
+  <project path="external/boost/circular_buffer"
            name="circular_buffer"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/compatibility"
+  <project path="external/boost/compatibility"
            name="compatibility"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/compute"
+  <project path="external/boost/compute"
            name="compute"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/concept_check"
+  <project path="external/boost/concept_check"
            name="concept_check"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/config"
+  <project path="external/boost/config"
            name="config"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/container"
+  <project path="external/boost/container"
            name="container"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/container_hash"
+  <project path="external/boost/container_hash"
            name="container_hash"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/context"
+  <project path="external/boost/context"
            name="context"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/conversion"
+  <project path="external/boost/conversion"
            name="conversion"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/convert"
+  <project path="external/boost/convert"
            name="convert"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/core"
+  <project path="external/boost/core"
            name="core"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/coroutine"
+  <project path="external/boost/coroutine"
            name="coroutine"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/coroutine2"
+  <project path="external/boost/coroutine2"
            name="coroutine2"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/crc"
+  <project path="external/boost/crc"
            name="crc"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/date_time"
+  <project path="external/boost/date_time"
            name="date_time"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/detail"
+  <project path="external/boost/detail"
            name="detail"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/disjoint_sets"
+  <project path="external/boost/disjoint_sets"
            name="disjoint_sets"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/dll"
+  <project path="external/boost/dll"
            name="dll"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/dynamic_bitset"
+  <project path="external/boost/dynamic_bitset"
            name="dynamic_bitset"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/endian"
+  <project path="external/boost/endian"
            name="endian"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/exception"
+  <project path="external/boost/exception"
            name="exception"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/fiber"
+  <project path="external/boost/fiber"
            name="fiber"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/filesystem"
+  <project path="external/boost/filesystem"
            name="filesystem"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/flyweight"
+  <project path="external/boost/flyweight"
            name="flyweight"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/foreach"
+  <project path="external/boost/foreach"
            name="foreach"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/format"
+  <project path="external/boost/format"
            name="format"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/function"
+  <project path="external/boost/function"
            name="function"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/functional"
+  <project path="external/boost/functional"
            name="functional"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/function_types"
+  <project path="external/boost/function_types"
            name="function_types"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/fusion"
+  <project path="external/boost/fusion"
            name="fusion"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/geometry"
+  <project path="external/boost/geometry"
            name="geometry"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/gil"
+  <project path="external/boost/gil"
            name="gil"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/graph"
+  <project path="external/boost/graph"
            name="graph"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/graph_parallel"
+  <project path="external/boost/graph_parallel"
            name="graph_parallel"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/hana"
+  <project path="external/boost/hana"
            name="hana"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/heap"
+  <project path="external/boost/heap"
            name="heap"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/icl"
+  <project path="external/boost/icl"
            name="icl"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/integer"
+  <project path="external/boost/integer"
            name="integer"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/interprocess"
+  <project path="external/boost/interprocess"
            name="interprocess"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/intrusive"
+  <project path="external/boost/intrusive"
            name="intrusive"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/io"
+  <project path="external/boost/io"
            name="io"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/iostreams"
+  <project path="external/boost/iostreams"
            name="iostreams"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/iterator"
+  <project path="external/boost/iterator"
            name="iterator"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/lambda"
+  <project path="external/boost/lambda"
            name="lambda"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/lexical_cast"
+  <project path="external/boost/lexical_cast"
            name="lexical_cast"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/locale"
+  <project path="external/boost/locale"
            name="locale"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/local_function"
+  <project path="external/boost/local_function"
            name="local_function"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/lockfree"
+  <project path="external/boost/lockfree"
            name="lockfree"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/log"
+  <project path="external/boost/log"
            name="log"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/logic"
+  <project path="external/boost/logic"
            name="logic"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/math"
+  <project path="external/boost/math"
            name="math"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/metaparse"
+  <project path="external/boost/metaparse"
            name="metaparse"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/move"
+  <project path="external/boost/move"
            name="move"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/mp11"
+  <project path="external/boost/mp11"
            name="mp11"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/mpi"
+  <project path="external/boost/mpi"
            name="mpi"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/mpl"
+  <project path="external/boost/mpl"
            name="mpl"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/msm"
+  <project path="external/boost/msm"
            name="msm"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/multi_array"
+  <project path="external/boost/multi_array"
            name="multi_array"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/multi_index"
+  <project path="external/boost/multi_index"
            name="multi_index"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/multiprecision"
+  <project path="external/boost/multiprecision"
            name="multiprecision"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/numeric"
+  <project path="external/boost/numeric"
            name="numeric_conversion"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/optional"
+  <project path="external/boost/optional"
            name="optional"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/parameter"
+  <project path="external/boost/parameter"
            name="parameter"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/phoenix"
+  <project path="external/boost/phoenix"
            name="phoenix"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/poly_collection"
+  <project path="external/boost/poly_collection"
            name="poly_collection"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/polygon"
+  <project path="external/boost/polygon"
            name="polygon"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/pool"
+  <project path="external/boost/pool"
            name="pool"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/predef"
+  <project path="external/boost/predef"
            name="predef"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/preprocessor"
+  <project path="external/boost/preprocessor"
            name="preprocessor"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/process"
+  <project path="external/boost/process"
            name="process"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/program_options"
+  <project path="external/boost/program_options"
            name="program_options"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/property_map"
+  <project path="external/boost/property_map"
            name="property_map"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/property_tree"
+  <project path="external/boost/property_tree"
            name="property_tree"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/proto"
+  <project path="external/boost/proto"
            name="proto"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/ptr_container"
+  <project path="external/boost/ptr_container"
            name="ptr_container"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/python"
+  <project path="external/boost/python"
            name="python"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/qvm"
+  <project path="external/boost/qvm"
            name="qvm"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/random"
+  <project path="external/boost/random"
            name="random"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/range"
+  <project path="external/boost/range"
            name="range"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/ratio"
+  <project path="external/boost/ratio"
            name="ratio"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/rational"
+  <project path="external/boost/rational"
            name="rational"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/regex"
+  <project path="external/boost/regex"
            name="regex"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/scope_exit"
+  <project path="external/boost/scope_exit"
            name="scope_exit"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/serialization"
+  <project path="external/boost/serialization"
            name="serialization"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/signals"
+  <project path="external/boost/signals"
            name="signals"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/signals2"
+  <project path="external/boost/signals2"
            name="signals2"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/smart_ptr"
+  <project path="external/boost/smart_ptr"
            name="smart_ptr"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/sort"
+  <project path="external/boost/sort"
            name="sort"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/spirit"
+  <project path="external/boost/spirit"
            name="spirit"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/stacktrace"
+  <project path="external/boost/stacktrace"
            name="stacktrace"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/statechart"
+  <project path="external/boost/statechart"
            name="statechart"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/static_assert"
+  <project path="external/boost/static_assert"
            name="static_assert"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/system"
+  <project path="external/boost/system"
            name="system"
-           remote="origin" />
+           remote="boostorg" />
            
-  <project path="external/boost/libs/test"
+  <project path="external/boost/test"
            name="test"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/thread"
+  <project path="external/boost/thread"
            name="thread"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/throw_exception"
+  <project path="external/boost/throw_exception"
            name="throw_exception"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/timer"
+  <project path="external/boost/timer"
            name="timer"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/tokenizer"
+  <project path="external/boost/tokenizer"
            name="tokenizer"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/tti"
+  <project path="external/boost/tti"
            name="tti"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/tuple"
+  <project path="external/boost/tuple"
            name="tuple"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/type_erasure"
+  <project path="external/boost/type_erasure"
            name="type_erasure"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/type_index"
+  <project path="external/boost/type_index"
            name="type_index"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/typeof"
+  <project path="external/boost/typeof"
            name="typeof"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/type_traits"
+  <project path="external/boost/type_traits"
            name="type_traits"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/units"
+  <project path="external/boost/units"
            name="units"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/unordered"
+  <project path="external/boost/unordered"
            name="unordered"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/utility"
+  <project path="external/boost/utility"
            name="utility"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/uuid"
+  <project path="external/boost/uuid"
            name="uuid"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/variant"
+  <project path="external/boost/variant"
            name="variant"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/vmd"
+  <project path="external/boost/vmd"
            name="vmd"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/wave"
+  <project path="external/boost/wave"
            name="wave"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/winapi"
+  <project path="external/boost/winapi"
            name="winapi"
-           remote="origin" />
+           remote="boostorg" />
 
-  <project path="external/boost/libs/xpressive"
+  <project path="external/boost/xpressive"
            name="xpressive"
-           remote="origin" />
+           remote="boostorg" />
 
 </manifest>

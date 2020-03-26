@@ -1,6 +1,7 @@
 cc_defaults {
     name: "boost_defaults",
-    vendor: true,
+//    vendor: true,
+    vendor_available: true,
 }
 
 cc_defaults {
