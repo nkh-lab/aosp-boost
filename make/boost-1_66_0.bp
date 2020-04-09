@@ -160,6 +160,50 @@ cc_library_headers {
 }
 
 cc_library {
+    name: "libboost_chrono",
+    defaults: ["boost_library_defaults"],
+
+    header_libs: [
+        "libboost_headers",
+    ],
+
+    shared: {
+        shared_libs: [
+            "libboost_system",
+        ],
+    },
+
+    srcs : [
+        "chrono/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["chrono/include"],
+
+    export_header_lib_headers: [
+        "libboost_headers",
+    ],
+}
+
+cc_library {
+    name: "libboost_date_time",
+    defaults: ["boost_library_defaults"],
+
+    header_libs: [
+        "libboost_headers",
+    ],
+
+    srcs : [
+        "date_time/src/**/*.cpp",
+    ],
+
+    export_include_dirs: ["date_time/include"],
+
+    export_header_lib_headers: [
+        "libboost_headers",
+    ],
+}
+
+cc_library {
     name: "libboost_filesystem",
     defaults: ["boost_library_defaults"],
 
