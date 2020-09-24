@@ -14,7 +14,7 @@ cd ./vendor/nkh-lab
 git clone https://github.com/nkh-lab/aosp-boost.git
 ```
 
-2. Get Boost sources codes by using corresponding manifest from [manifests] folder
+2. Get Boost sources codes by using corresponding manifest from [manifests] folder.
 Manifest file can be copied to repo [local_manifests] folder: (.repo/local_manifests/aosp-boost-1_66_0.xml) or simply linked:
 ```
 cd .repo/local_manifests
@@ -30,8 +30,7 @@ or included from other manifest:
 ```
 After manifest applying use repo sync to fetch Boost source codes.
 
-3. Apply build script to AOSP tree
-By using symlink:
+3. Apply build script to AOSP tree by using symlink:
 ```
 cd ./external/boost
 ln -s ../../vendor/nkh-lab/aosp-boost/make/boost-1_66_0.bp Android.bp
