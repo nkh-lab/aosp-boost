@@ -10,6 +10,7 @@ Project supports static and shared libraries linkage and includes:
 ## Applying to AOSP tree and compiling
 1. Get given project to AOSP tree by adding it to AOSP manifest or simply cloning, for example:
 ```
+mkdir -p ./vendor/nkh-lab
 cd ./vendor/nkh-lab
 git clone https://github.com/nkh-lab/aosp-boost.git
 ```
@@ -17,7 +18,8 @@ git clone https://github.com/nkh-lab/aosp-boost.git
 2. Get Boost sources codes by using corresponding manifest from [manifests] folder.
 Manifest file can be copied to repo [local_manifests] folder: (.repo/local_manifests/aosp-boost-1_66_0.xml) or simply linked:
 ```
-cd .repo/local_manifests
+mkdir -p ./.repo/local_manifests
+cd ./.repo/local_manifests
 ln -s ../../vendor/nkh-lab/aosp-boost/manifests/boost-1_66_0.xml boost-1_66_0.xml
 ```
 or included from other manifest:
