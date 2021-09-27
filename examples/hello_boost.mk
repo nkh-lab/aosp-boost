@@ -1,2 +1,2 @@
-RODUCT_PACKAGES += hello_boost_shared
-RODUCT_PACKAGES += hello_boost_static
+PRODUCT_PACKAGES += hello_boost_shared
+PRODUCT_PACKAGES += hello_boost_static
