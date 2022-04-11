@@ -52,6 +52,8 @@ $ cd external/boost/
 $ mm
 ```
 
+[NCAR Android Automotive Emulator Project](https://github.com/nkh-lab/aosp-ncar-manifest) can be used as a reference or example to see how the mentioned steps were applied to a real AOSP project.
+
 ## "Hello Boost" AOSP usage example
 
 This project contains a simple example of using the Boost libraries in AOSP, which can be found at [examples/hello_boost](examples/hello_boost).
